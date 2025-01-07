@@ -1,20 +1,24 @@
 # Express.js CRUD Sample
 
 A simple Express.js application demonstrating CRUD operations using in-memory storage.
+Also support real-time updates using Supabase.
 
 ## Setup
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Start the server:
+
 ```bash
 npm start
 ```
 
 For development with auto-reload:
+
 ```bash
 npm run dev
 ```
@@ -30,6 +34,7 @@ npm run dev
 ## Request Examples
 
 ### Create Item
+
 ```bash
 curl -X POST http://localhost:3000/api/items \
   -H "Content-Type: application/json" \
@@ -37,11 +42,13 @@ curl -X POST http://localhost:3000/api/items \
 ```
 
 ### Get All Items
+
 ```bash
 curl http://localhost:3000/api/items
 ```
 
 ### Update Item
+
 ```bash
 curl -X PUT http://localhost:3000/api/items/1 \
   -H "Content-Type: application/json" \
@@ -49,6 +56,7 @@ curl -X PUT http://localhost:3000/api/items/1 \
 ```
 
 ### Delete Item
+
 ```bash
 curl -X DELETE http://localhost:3000/api/items/1
 ```
